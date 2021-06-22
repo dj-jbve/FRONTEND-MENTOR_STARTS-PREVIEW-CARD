@@ -44,7 +44,7 @@ p{
     width: 100%;
     min-height: 200px;
     margin-left:50px;
-    background-image: url("img/image-header-desktop.jpg");
+    background-image: url("images/image-header-desktop.jpg");
     background-size: cover;
     background-position: right;
     background-repeat: none;
@@ -96,7 +96,7 @@ p{
     }
     .decor{
         margin: 0;
-        background-image: url("img/image-header-mobile.jpg");
+        background-image: url("images/image-header-mobile.jpg");
         background-position: top;
     }
     
