@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background:hsl(233, 47%, 7%);
+    color:hsl(0,100%,100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding:0 10%;
+}
+h1{
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+p{
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+}
+.card{
+    background:hsl(244, 38%, 16%);
+    border-radius: 5px;
+    display:flex;
+    flex-direction: row-reverse;
+    position:relative;
+    overflow:hidden;
+    box-sizing: content-box;
+}
+.info {
+    margin:60px;
+}
+.decor{
+    width: 100%;
+    min-height: 200px;
+    margin-left:50px;
+    background-image: url("images/image-header-desktop.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: none;
+    filter:contrast(120%) brightness(0.8);
+    
+}
+.color-overlay{
+    width: 100%;
+    height: 100%;
+    background:hsl(277, 64%, 61%);
+    opacity: 0.5;
+}
+.purple{
+    color:hsl(277, 64%, 61%);
+}
+.data-cont{
+    display:flex;
+    justify-content: space-between;
+}
+.data{
+    margin-top:2em;
+}
+.data spam{
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.data h2{
+    margin-bottom: 0.5em;
+}
+.attribution{
+    position:absolute;
+    bottom:10px;
+
+}
+
+@media screen and (max-width:770px){
+    .card{
+        flex-direction: column;
+        text-align: center;
+    }
+    .data-cont{
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        margin:20px;
+    }
+    .decor{
+        margin: 0;
+        background-image: url("images/image-header-mobile.jpg");
+        background-position: top;
+    }
+    
+}
